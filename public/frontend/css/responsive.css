@@ -1,0 +1,236 @@
+/*------------------------------------------ END FLEX ------------------------------------------*/
+@media screen and (max-width:1335px) {
+}
+@media screen and (max-width:1296px) {
+}
+@media screen and (min-width:1200px) {
+	.pdl{padding-left: 0}
+	.pdr{padding-right: 0}
+	.pd0{padding-right: 0;padding-left: 0}
+	.pd5{padding-right: 5px;padding-left:5px}
+	.row-desktop{margin-right: -15px;margin-left: -15px}
+}
+@media screen and (max-width:1200px) {
+	.mobile{width: 100%}
+	.pd0_mobole{padding: 0}
+}
+@media screen and (max-width:1024px) {
+	header .wrap-top{
+		background: #fff !important;
+		min-height: auto;
+	}
+	.logo-header img{text-align: center;margin: 0 auto}
+	.logo-header{top: 0;left: 0}
+	.box_containerlienhe .header .name{height: auto}
+	.box_containerlienhe .header .name .tool{position: relative;bottom: 0}
+	footer{padding-bottom: 10%}
+}
+@media screen and (max-width:1023px){
+	
+}
+@media screen and ( max-width:992px) {
+	.top_right{
+		display: none;
+	}
+	.logo-header{
+		width: 30%
+	}
+	.top_center{
+		padding: 0 10px;
+		width: 70%;
+	}
+	.row_menu{
+		margin: 0 -15px;
+	}
+	.col-menu {
+		width: calc(100% - 65px)
+	}
+	.col_lang {
+		width: 65px;
+	}
+	ul#main-nav>li a,ul#main-nav>li ul li a{
+		font-size: 14px;
+	}
+	ul#main-nav>li ul li{
+		min-width: 180px;
+	}
+	ul#main-nav>li ul{
+		max-width: 180px;
+	}
+	header .logo img {
+		margin-top: 20px;
+	}
+	.title-product-dm{
+		height:auto	
+	}
+	.title-product-dm h2{
+		height: auto;
+		margin-bottom: 0;
+		line-height: 38px;
+		font-size: 20px;
+	}
+	.col-gcn{
+		width: calc(100% / 3);
+	}
+	.col-productnb{
+		width: calc(100% / 4);
+	}
+	.media_left{
+		width: 100%;
+		padding: 10px 0;
+	}
+	.media_right{
+		width: 100%;
+		padding: 10px 0;
+	}
+	.hinhvideo1,#facebook-full{
+		width: 50%;
+		float: left;
+	}
+	#facebook-full{
+		padding: 0 0 0 15px;
+	}
+}
+
+
+@media screen and (max-width:768px){
+	#xmenx{
+		overflow: hidden;
+	}
+	.col-gcn{
+		width: calc(100% / 2);
+	}
+	.col-productnb{
+		width: calc(100% / 2);
+	}
+	.top_right,nav{
+		display: none;
+	}
+	.logo-header {
+		width: 30%;
+	}
+	.top_center {
+		width: 70%;
+	}
+	header #form-xsearch button{
+		width: 40px;
+	}
+	header #form-xsearch input{
+		padding: 5px 40px 5px 0;
+		height: 40px;
+	}
+	.album-cut .album-col:nth-child(1),.album-cut .album-col:nth-child(2),.album-cut .album-col:nth-child(3){width: 100%;text-align: center;	}
+	
+	img, .album-cut .album-col img,.product_img img{
+		max-width: 100% ;
+		height: initial ;
+	}
+	.album-cut .album-col img{
+		margin: 0 auto;
+	}
+
+	.owl-giaychungnhan .owl-prev,
+	.owl-product_ajax .owl-prev {
+		left: -10px !important;
+		background: url(../../images/data_img/l.png) no-repeat !important;
+	}
+	.owl-giaychungnhan .owl-next,
+	.owl-product_ajax .owl-next {
+		right: -10px !important;
+		background: url(../../images/data_img/r.png) no-repeat !important;
+	}
+
+
+	::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+
+	::-webkit-scrollbar-button {
+		width: 0px;
+		height: 0px;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: #c3c3c3;
+	}
+
+	::-webkit-scrollbar-track-piece {
+		background-color: #ffffff;
+	}
+
+	::-webkit-scrollbar-thumb {
+		height: 50px;
+		background-color: #c3c3c3;
+		border-radius: 3px;
+	}
+
+	::-webkit-scrollbar-corner {
+		background-color: #ffffff;
+	}
+
+	::-webkit-resizer {
+		background-color: #666;
+	}
+	.footer1,.footer2,.footer3{
+		width: 100% ;
+		padding: 5px 15px;
+	}
+	.coppyright{
+		padding-bottom: 55px ;
+		text-align: center;
+	}
+	.thongke{
+		text-align: center;	
+	}
+	.first_news{
+		width: 100%;
+		padding: 10px 0;
+	}
+	.news_roll{
+		width: 100%;
+	}
+	.hinhvideo1,#facebook-full{
+		width: 100%;
+		float: left;
+	}
+	#facebook-full{
+		padding: 15px 0 0 0px;
+	}
+	.row_media {
+		margin: 0px;
+	}
+	.choose_news span{
+		font-size: 15px;
+	}
+	.title-main{
+		font-size: 22px;
+	}
+	.top_right{
+		display: none;
+	}
+	.logo-header{
+		width: 100%
+	}
+	.top_center{
+		width: 100%;
+	}
+	.effect-run canvas{
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+@media screen and (max-width:767px) {
+	
+}
+@media screen and (max-width:480px) {
+	
+	
+}
+@media screen and (max-width:350px){
+	
+}
+@media screen and (max-width:320px){
+
+}
