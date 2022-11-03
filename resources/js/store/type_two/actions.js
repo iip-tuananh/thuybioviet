@@ -14,7 +14,7 @@ export const listTypeTwo = ({commit},opt) => {
 
 export const destroyTypeTwo  = ({commit},opt) => {
     return new Promise((resolve, reject) => {
-        HTTP.get('/api/product/type_two/delete/'+ opt).then(response => {
+        HTTP.get('/api/product/type_two/delete/'+ opt.id).then(response => {
             return resolve(response.data);
         }).catch(error => {
             return reject(error);
