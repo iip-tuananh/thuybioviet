@@ -81,7 +81,7 @@ export default {
     
   },
   methods: {
-    ...mapActions(["listTypeTwo","destroyCate", "loadings"]),
+    ...mapActions(["listTypeTwo","destroyTypeTwo", "loadings"]),
     closePop(event) {
       this.listTypeTwos();
       this.popupActivo = event;
@@ -108,7 +108,7 @@ export default {
     },
     destroy(){
       this.loadings(true);
-      this.destroyCate({id:this.id_item})
+      this.destroyTypeTwo({id:this.id_item})
       .then(response => {
         this.listTypeTwos()
         this.loadings(false);
