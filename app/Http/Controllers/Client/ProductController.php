@@ -22,27 +22,27 @@ class ProductController extends Controller
         return view('product.list',$data);
     }
 
-    public function allListCate($danhmuc)
+    public function allListCate($cate)
     {
-        $data['list'] = Product::where(['status'=>1,'cate_slug'=>$danhmuc])
+        $data['list'] = Product::where(['status'=>1,'cate_slug'=>$cate])
         ->orderBy('id','DESC')
         ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
         ->paginate(12);
-        $data['cateno'] = Category::where('slug',$danhmuc)->first(['id','name','avatar','content','slug']);
+        $data['cateno'] = Category::where('slug',$cate)->first(['id','name','avatar','content','slug']);
         $cate_id = $data['cateno']->id;
         $data['cateid'] = $cate_id;
         $data['title'] = languageName($data['cateno']->name);
         $data['content'] = $data['cateno']->content;
         return view('product.list',$data);
     }
-    public function allListType($danhmuc,$loaidanhmuc){
-        $data['list'] = Product::where(['status'=>1,'cate_slug'=>$danhmuc,'type_slug'=>$loaidanhmuc])
+    public function allListType($cate,$typeCate){
+        $data['list'] = Product::where(['status'=>1,'cate_slug'=>$cate,'type_slug'=>$typeCate])
         ->orderBy('id','DESC')
         ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
         ->paginate(12);
         $data['pronew'] = Product::where('status',1)->orderBy('id','DESC')->select('id','category','name','discount','price','images','slug','cate_slug','type_slug')
         ->paginate(5);
-        $data['cateno'] = TypeProduct::where(['slug'=>$loaidanhmuc, 'cate_slug'=>$danhmuc])->first(['id','name','cate_id','content', 'avatar']);
+        $data['cateno'] = TypeProduct::where(['slug'=>$typeCate, 'cate_slug'=>$cate])->first(['id','name','cate_id','content', 'avatar']);
         $cate_id = $data['cateno']->cate_id;
         $data['title'] = languageName($data['cateno']->name);
         $data['cateid'] = 0;
